@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>Add</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+
+  <ion-item>
+      name:
+      <ion-input [(ngModel)]="item.name"></ion-input>
+  </ion-item>
+
+
+  <ion-item>
+      price:
+      <ion-input [(ngModel)]="item.price"></ion-input>
+  </ion-item>
+
+  <ion-item> type:
+      <ion-input [(ngModel)]="item.type"></ion-input>
+  </ion-item>
+  <div class="but">
+      <ion-button (click)="add()">Add</ion-button>
+  </div>
+
+</ion-content>

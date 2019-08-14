@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+      <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label floating>Name and Surname:</ion-label>
+        <ion-input type="text" [(ngModel)]="user.nameandsurname"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>User Name:</ion-label>
+        <ion-input type="text" [(ngModel)]="user.name"></ion-input>
+    </ion-item>
+  
+  <ion-item>
+      <ion-label floating>Email Address:</ion-label>
+      <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label floating>Password:</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+
+  <div class="but">
+      <!-- <ion-button (click)="login(user)">Login</ion-button> -->
+      <ion-button (click)="register(user)" [routerLink]="['/login']">Register</ion-button>
+  </div>
+
+</ion-content>

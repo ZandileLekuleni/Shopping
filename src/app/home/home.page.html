@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title>
+          Grocery App
+      </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+
+  <ion-item *ngFor="let item of itemList" (click)="edit(item)">
+
+      {{item.name}} {{item.price}} {{item.type}} {{item.key}}
+
+  </ion-item>
+      <!-- <ion-button (click)="delete()">delete</ion-button> -->
+      <ion-button (click)="add2()">add</ion-button>
+</ion-content>
