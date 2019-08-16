@@ -1,11 +1,13 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar color="tertiary">
       <ion-title>Register</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-item>
+    <br>
+    <br> -->
+    <!-- <ion-item>
         <ion-label floating>Name and Surname:</ion-label>
         <ion-input type="text" [(ngModel)]="user.nameandsurname"></ion-input>
     </ion-item>
@@ -25,8 +27,65 @@
   </ion-item>
 
   <div class="but">
-      <!-- <ion-button (click)="login(user)">Login</ion-button> -->
-      <ion-button (click)="register(user)" [routerLink]="['/login']">Register</ion-button>
-  </div>
+      <ion-button (click)="login(user)">Login</ion-button>
+      <ion-button (click)="register(user)" [routerLink]="['/login']">Register</ion-button> -->
+  <!-- </div>  -->
 
-</ion-content>
+  <!-- <div class="form-group">
+        <label for="name">Name       </label>
+        <input type="name" class="form-control" [(ngModel)]="nameInput"
+          id="name" placeholder="Name">
+      </div>
+      <br>
+      <div class="form-group">
+            <label for="surname">Surname       </label>
+            <input type="surname" class="form-control" [(ngModel)]="surnameInput"
+              id="surname" placeholder="Surname">
+          </div>
+          <br>
+  <div class="form-group">
+        <label for="email">Email       </label>
+        <input type="email" class="form-control" [(ngModel)]="emailInput"
+          id="email" placeholder="Email">
+      </div>
+      <br>
+      <div class="form-group" *ngIf="!isForgotPassword">
+        <label for="password">Password           </label>
+        <input type="password" class="form-control"
+          [(ngModel)]="passwordInput" id="password" placeholder="Password">
+      </div><br>
+      <div class="form-group" *ngIf="!isForgotPassword">
+     
+        <span *ngIf="selectedVal == 'login'; else elseBlock">
+          <button type="button" class="btn btn-primary" (click)="loginUser()">Log
+            In</button>
+        </span>
+        <ng-template #elseBlock>
+            <button type="button" class="btn btn-primary" (click)="register(user)" [routerLink]="['/login']">Register</button>
+
+        </ng-template>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <a href="javascript:void(0)" (click)="this.isForgotPassword= true;">Forgot
+          Password?</a>
+    
+      </div>
+    
+    
+    
+    
+    
+    
+    
+      <div class="form-group" *ngIf="isForgotPassword">
+     
+          <button type="button" class="btn" (click)="this.isForgotPassword=
+            false;">Cancel</button>
+            
+    
+    
+          <button type="button" class="btn btn-primary"
+            (click)="forgotPassword()">Get email to reset passowrd</button>
+        </div>
+</ion-content> -->
